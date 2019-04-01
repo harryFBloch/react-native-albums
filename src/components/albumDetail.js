@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Text, View, Image} from 'react-native'
+import {Text, View, Image, Linking} from 'react-native'
 import Card from './card'
 import CardItem from './cardItem'
 import Button from './button'
@@ -23,7 +23,7 @@ const AlbumDetail = ({ album }) => {
       </CardItem>
 
       <CardItem>
-        <Button text="Click ME!!!" fireButton={() => console.log(album.title)}/>
+        <Button text="Click ME!!!" fireButton={() => Linking.openURL(album.url)}/>
       </CardItem>
     </Card>
   )
