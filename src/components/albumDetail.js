@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {Text, View, Image} from 'react-native'
 import Card from './card'
 import CardItem from './cardItem'
+import Button from './button'
 
 const AlbumDetail = ({ album }) => {
   return (
@@ -19,6 +20,10 @@ const AlbumDetail = ({ album }) => {
 
       <CardItem>
         <Image style={styles.imageStyle} source={{uri: album.image}}/>
+      </CardItem>
+
+      <CardItem>
+        <Button text="Click ME!!!" fireButton={() => console.log(album.title)}/>
       </CardItem>
     </Card>
   )
