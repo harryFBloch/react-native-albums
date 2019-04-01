@@ -6,7 +6,7 @@ import AblumList from './src/components/albumList';
 
 //render it to the device
 const App = () => (
-  <View>
+  <View style={{flex: 1}}>
     <Header headerText="Albums" />
     <AblumList />
   </View>

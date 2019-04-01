@@ -7,15 +7,14 @@ const AlbumDetail = ({ album }) => {
   return (
     <Card>
       <CardItem>
-      <View style={styles.thumbnailContainerStyle}>
-        <Image style={styles.thumbnailStyle} source={{uri: album.thumbnail_image}}/>
-      </View>
+        <View style={styles.thumbnailContainerStyle}>
+          <Image style={styles.thumbnailStyle} source={{uri: album.thumbnail_image}}/>
+        </View>
 
-      <View style={styles.headerContentStyle}>
-        <Text style={styles.headerTextStyle}>{album.title}</Text>
-        <Text>{album.artist}</Text>
-      </View>
-
+        <View style={styles.headerContentStyle}>
+          <Text style={styles.headerTextStyle}>{album.title}</Text>
+          <Text>{album.artist}</Text>
+        </View>
       </CardItem>
 
       <CardItem>
